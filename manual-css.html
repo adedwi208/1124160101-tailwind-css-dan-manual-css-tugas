@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desain Manual dengan CSS</title>
+  <style>
+    /* Reset default margin dan padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* 1. Box Model */
+    .box-model {
+      padding: 20px;
+      margin: 20px 0;
+      background-color: #e0f7fa;
+      border: 2px solid #00695c;
+      font-weight: bold;
+    }
+
+    /* 2. Positioning */
+    .positioning-container {
+      position: relative;
+      height: 200px;
+      background-color: #b2ebf2;
+    }
+
+    .positioned-box {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 10px;
+      background-color: #00796b;
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    /* 3. Display dan Layout */
+    .inline-box {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-color: #ffcc80;
+      text-align: center;
+      line-height: 100px;
+      margin: 10px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    /* 4. Flexbox */
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .flex-item {
+      background-color: #ffeb3b;
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+      font-weight: bold;
+      width: 30%;
+    }
+
+    /* 5. CSS Grid */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .grid-item {
+      background-color: #ff7043;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    /* 6. Responsive Design */
+    .responsive-box {
+      padding: 20px;
+      background-color: #00bcd4;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      transition: background-color 0.5s ease;
+    }
+
+    @media (max-width: 600px) {
+      .responsive-box {
+        background-color: #ff4081;
+      }
+    }
+
+    /* 7. Transformasi dan Animasi */
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: #4caf50;
+      margin-top: 20px;
+      border-radius: 5px;
+      transition: transform 0.5s ease;
+    }
+
+    .animated-box:hover {
+      transform: rotate(45deg) scale(1.2);
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Contoh Desain Manual dengan CSS</h1>
+
+  <!-- 1. Box Model -->
+  <section>
+    <h2>1. Box Model</h2>
+    <div class="box-model">
+      Ini contoh Box Model dengan padding, border, dan margin.
+    </div>
+  </section>
+
+  
+
+</body>
+</html>
